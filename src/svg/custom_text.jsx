@@ -5,9 +5,11 @@ export const buildSvgTextMarkup = (text, opts = {}) => {
     fontSize = 64,
     fontFamily = "Lilita One",
   } = opts;
+  // <?xml version="1.0" encoding="UTF-8"?>
 
   return `
   <svg xmlns="http://www.w3.org/2000/svg"
+  
   width="${width}"
   height="${height}"
   viewBox="0 0 ${width} ${height}">
@@ -26,8 +28,13 @@ export const buildSvgTextMarkup = (text, opts = {}) => {
   <stop offset="20%" stop-color="#FDF586"/>
   <stop offset="78%" stop-color="#EE9124"/>
   </linearGradient>
-
+  
   <style>
+  @font-face {
+  font-family: 'Lilita One';
+  src: url('https://fonts.gstatic.com/s/lilitaone/v13/i7dPIFZ9Zz-WBtRtedDbYE98RXw.woff2') format('woff2');
+}
+  
   text{
   font-family:${fontFamily};
   font-size:${fontSize}px;

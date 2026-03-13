@@ -1,11 +1,10 @@
-import { PixiDev } from "./pixi/pixi_dev";
-import { CustomText } from "./svg/custom_text";
-import { SvgText } from "./svg/SvgText";
+import { WinLines2 } from "./lines/WinLines2";
+import { PixiShaders } from "./pixi_shaders/PixiShaders";
 
 function App() {
   return (
     <>
-      <PixiDev />
+      <PixiShaders />
     </>
   );
 }
